@@ -70,12 +70,22 @@ html {
     line-height: 1;
 }
 
+.container {
+    width: 115rem;
+    margin: 0 auto;
+}
+
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #333;
 }
 
 .heading-primary {
+    font-size: 5rem;
+    margin-block-end: 3rem;
 }
 
 .heading-secondary {
@@ -105,22 +115,34 @@ html {
 }
 
 /* BUTTTONS */
-
 .btn,
 .btn:link,
 .btn:visited {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 11px;
+    border: 2px solid transparent;
+    transition: all .4s;
 }
 
 .btn--primary:link,
 .btn--primary:visited {
+    padding: 1.5rem 3rem;
+    background-color: #e67e22;
+    color: #fff;
 }
 
 .btn--primary:hover,
 .btn--primary:active {
+    background-color: #cf711f;
 }
 
 .btn--secondary:link,
 .btn--secondary:visited {
+    padding: 1.5rem 2.5rem;
+    background-color: #fff;
+    color: #333
 }
 
 .btn--secondary:hover,
@@ -133,4 +155,8 @@ html {
 
 .btn--cta:hover,
 .btn--cta:active {
+}
+
+strong {
+    font-weight: 700;
 }

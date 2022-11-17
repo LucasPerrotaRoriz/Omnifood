@@ -64,46 +64,49 @@
 
     <main>
       <section class="section-hero">
-        <div class="hero__text-box">
-          <h1 class="heading-primary">
-            A healthy meal delivered to your door, every single day
-          </h1>
-          <p class="hero__description">
-            The smart 365-days-per-year food subscription that will make you eat
-            healthy again. Tailored to your personal tastes and nutritional
-            needs.
-          </p>
-          <div class="hero__btn">
-            <a href="#" class="btn btn--primary">Start eating well</a>
-            <a href="#" class="btn btn--secondary">Learn more &darr;</a>
-          </div>
-          <div class="hero__delivered-meals">
-            <div class="hero__delivered-imgs">
-              <img src="img/customers/customer-1.jpg" alt="Customer 1" />
-              <img src="img/customers/customer-2.jpg" alt="Customer 2" />
-              <img src="img/customers/customer-3.jpg" alt="Customer 3" />
-              <img src="img/customers/customer-4.jpg" alt="Customer 4" />
-              <img src="img/customers/customer-5.jpg" alt="Customer 5" />
-              <img src="img/customers/customer-6.jpg" alt="Customer 6" />
-            </div>
-            <p class="hero__delivered-text">
-              <strong>250,000+</strong> meals delivered last year!
+        <div class="hero">
+          <div class="hero__text-box">
+            <h1 class="heading-primary">
+              A healthy meal delivered to your door, every single day
+            </h1>
+            <p class="hero__description">
+              The smart 365-days-per-year food subscription that will make you
+              eat healthy again. Tailored to your personal tastes and
+              nutritional needs.
             </p>
+            <div class="hero__btn">
+              <a href="#" class="btn btn--primary">Start eating well</a>
+              <a href="#" class="btn btn--secondary">Learn more &darr;</a>
+            </div>
+            <div class="hero__delivered-meals">
+              <div class="hero__delivered-imgs">
+                <img src="img/customers/customer-1.jpg" alt="Customer 1" />
+                <img src="img/customers/customer-2.jpg" alt="Customer 2" />
+                <img src="img/customers/customer-3.jpg" alt="Customer 3" />
+                <img src="img/customers/customer-4.jpg" alt="Customer 4" />
+                <img src="img/customers/customer-5.jpg" alt="Customer 5" />
+                <img src="img/customers/customer-6.jpg" alt="Customer 6" />
+              </div>
+              <p class="hero__delivered-text">
+                <strong>250,000+</strong> meals delivered last year!
+              </p>
+            </div>
+          </div>
+
+          <div class="hero__img-box">
+            <picture>
+              <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero-min.png" type="image/png" />
+              <img
+                src="img/hero.png"
+                alt="Woman eating a delicious meal, a container with food, 
+            a delicious meal"
+                class="hero__img"
+              />
+            </picture>
           </div>
         </div>
-
-        <div class="hero__img-box">
-          <picture>
-            <source srcset="img/hero.webp" type="image/webp" />
-            <source srcset="img/hero-min.png" type="image/png" />
-            <img
-              src="img/hero.png"
-              alt="Woman eating a delicious meal, a container with food, 
-            a delicious meal"
-              class="hero__img"
-            />
-          </picture>
-        </div>
+        <!-- END OF HERO -->
       </section>
 
       <section class="section-featured">
@@ -671,7 +674,8 @@
             </li>
           </ul>
         </nav>
-      </div> <!-- END OF CONTAINER -->
+      </div>
+      <!-- END OF CONTAINER -->
     </footer>
   </body>
 </html>

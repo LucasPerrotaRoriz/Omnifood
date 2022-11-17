@@ -5,8 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 9rem;
-    padding-inline: 4rem;
+    height: 9.6rem;
+    padding-inline: 4.8rem;
     background-color: #fdf2e9;
 }
 
@@ -40,13 +40,75 @@
 .header__link.cta:active {
     background-color: #cf711f;
 }
-/**************************/
-/* NAVIGATION */
-/**************************/
-
 
 /**************************/
-/* HERO SECTION */
+/* HERO */
+/**************************/
+.section-hero {
+    padding: 6.4rem 3.2rem 9.6rem;
+    background-color: #fdf2e9;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.hero__description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-block-end: 4rem;
+    color: #555;
+}
+
+.hero__delivered-meals {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-block-start: 7rem;
+}
+
+.hero__delivered-imgs {
+    display: flex;
+}
+
+.hero__delivered-imgs img {
+    height: 5rem;
+    margin-right: -1.6rem;
+    border-radius: 50%;
+    border: 2px solid #fdf2e9;
+}
+
+.hero__delivered-imgs img:last-child {
+    margin-right: 0rem;
+}
+
+.hero__delivered-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.hero__delivered-text strong {
+    color: #e67e22;
+}
+
+.hero__btn {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.hero__img {
+    width: 100%;
+    margin-inline-start: 2rem;
+    overflow: hidden;
+}
+/**************************/
+/* FEATURED SECTION */
 /**************************/
 
 
