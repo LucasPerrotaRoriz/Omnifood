@@ -214,7 +214,7 @@
       </section>
 
       <section class="section-meals" id="meals">
-        <div class="container">
+        <div class="container center">
           <span class="subheading">Meals</span>
           <h2 class="heading-secondary">
             Omnifood AI chooses from 5,000+ recipes
@@ -229,24 +229,26 @@
                 alt="Japanese Gyozas"
                 class="meal__img"
               />
-              <div class="tags">
-                <span class="tag tag--vegetarian">Vegetarian</span>
+              <div class="meal__content">
+                <div class="tags">
+                  <span class="tag tag--vegetarian">Vegetarian</span>
+                </div>
+                <p class="meal__title">Japanese Gyozas</p>
+                <ul class="meal__attributes">
+                  <li class="meal__attribute">
+                    <ion-icon class="meal__icon" name="flame"></ion-icon>
+                    <span><strong>650</strong> calories</span>
+                  </li>
+                  <li class="meal__attribute">
+                    <ion-icon class="meal__icon" name="restaurant"></ion-icon>
+                    <span>NutriScore &copy; <strong>74</strong></span>
+                  </li>
+                  <li class="meal__attribute">
+                    <ion-icon class="meal__icon" name="star-outline"></ion-icon>
+                    <span><strong>4.9</strong> rating (537)</span>
+                  </li>
+                </ul>
               </div>
-              <p class="meal__title">Japanese Gyozas</p>
-              <ul class="meal__attributes">
-                <li class="meal__attribute">
-                  <ion-icon class="meal__icon" name="flame"></ion-icon>
-                  <span><strong>650</strong> calories</span>
-                </li>
-                <li class="meal__attribute">
-                  <ion-icon class="meal__icon" name="restaurant"></ion-icon>
-                  <span>NutriScore &copy; <strong>74</strong></span>
-                </li>
-                <li class="meal__attrirbute">
-                  <ion-icon class="meal__icon" name="star-outline"></ion-icon>
-                  <span><strong>4.9</strong> rating (537)</span>
-                </li>
-              </ul>
             </div>
             <!-- END OF MEAL -->
 
@@ -257,25 +259,27 @@
                 alt="Avocado Salad"
                 class="meal__img"
               />
-              <div class="tags">
-                <span class="tag tag--vegan">Vegan</span>
-                <span class="tag tag--paleo">Paleo</span>
+              <div class="meal__content">
+                <div class="tags">
+                  <span class="tag tag--vegan">Vegan</span>
+                  <span class="tag tag--paleo">Paleo</span>
+                </div>
+                <p class="meal__title">Avocado Salad</p>
+                <ul class="meal__attributes">
+                  <li class="meal__attribute">
+                    <ion-icon class="meal__icon" name="flame"></ion-icon>
+                    <span><strong>400</strong> calories</span>
+                  </li>
+                  <li class="meal__attribute">
+                    <ion-icon class="meal__icon" name="restaurant"></ion-icon>
+                    <span>NutriScore &copy; <strong>92</strong></span>
+                  </li>
+                  <li class="meal__attribute">
+                    <ion-icon class="meal__icon" name="star-outline"></ion-icon>
+                    <span><strong>4.8</strong> rating (537)</span>
+                  </li>
+                </ul>
               </div>
-              <p class="meal__title">Avocado Salad</p>
-              <ul class="meal__attributes">
-                <li class="meal__attribute">
-                  <ion-icon class="meal__icon" name="flame"></ion-icon>
-                  <span><strong>400</strong> calories</span>
-                </li>
-                <li class="meal__attribute">
-                  <ion-icon class="meal__icon" name="restaurant"></ion-icon>
-                  <span>NutriScore &copy; <strong>92</strong></span>
-                </li>
-                <li class="meal__attrirbute">
-                  <ion-icon class="meal__icon" name="star-outline"></ion-icon>
-                  <span><strong>4.8</strong> rating (537)</span>
-                </li>
-              </ul>
             </div>
             <!--   END OF MEAL -->
 
@@ -320,7 +324,9 @@
             <!-- NED OF DIETS -->
           </div>
           <!-- END OF MEALS -->
-          <a href="#" class="link">See all recipes</a>
+          <div class="recipes center">
+            <a href="#" class="link">See all recipes &rarr;</a>
+          </div>
         </div>
         <!-- END OF CONTAINER -->
       </section>
