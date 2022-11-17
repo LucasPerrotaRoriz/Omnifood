@@ -89,12 +89,22 @@ html {
 }
 
 .heading-secondary {
+    font-size: 4.5rem;
+    margin-block-end: 7.2rem;
 }
 
 .heading-tertiary {
+    font-size: 3.2rem;
+    margin-block-end: 3.2rem;
 }
 
 .subheading {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-block-end: 1.6rem;
+    color: #cf711f;
 }
 
 .list {
