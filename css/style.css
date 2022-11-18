@@ -17,18 +17,16 @@
 .header__list {
   display: flex;
   gap: 4.8rem;
-  list-style-type: none;
 }
 
 .header__link {
   font-size: 1.8rem;
   font-weight: 500;
   color: #333;
-  text-decoration: none;
 }
 
-.header__link.cta:link,
-.header__link.cta:visited {
+.header__link.header__cta:link,
+.header__link.header__cta:visited {
   padding: 1rem 2rem;
   border-radius: 9px;
   background-color: #e67e22;
@@ -36,8 +34,8 @@
   transition: all 0.4s;
 }
 
-.header__link.cta:hover,
-.header__link.cta:active {
+.header__link.header__cta:hover,
+.header__link.header__cta:active {
   background-color: #cf711f;
 }
 
@@ -137,10 +135,6 @@
 /**************************/
 /* HOW IT WORKS SECTION */
 /**************************/
-.section-how {
-  padding: 9.6rem 0;
-}
-
 .steps__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -201,10 +195,6 @@
 /**************************/
 /* MEALS SECTION */
 /**************************/
-.section-meals {
-  padding: 9.6rem 0;
-}
-
 .meals {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -272,7 +262,6 @@
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-  list-style-type: none;
 }
 
 .meal__attribute {
@@ -362,8 +351,8 @@
 /**************************/
 /* MEALS SECTION */
 /**************************/
-.section-pricing {
-  padding: 9.6rem 0;
+.section-meals {
+  padding: 9.6rem 0 6.4rem 0;
 }
 
 .plans {
@@ -483,7 +472,8 @@
 /* CTA SECTION */
 /**************************/
 .section-cta {
-  padding: 9.6rem 0;
+  padding: 6.4rem 0 9.6rem 0;
+  border-bottom: 1px solid #e7e4e4;
 }
 
 .cta {
@@ -549,7 +539,59 @@
   border-start-end-radius: 11px;
   border-end-end-radius: 11px;
 }
-
 /**************************/
 /* FOOTER */
 /**************************/
+.footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 6.4rem;
+  row-gap: 3.2rem;
+  padding: 9.6rem 0;
+}
+
+.social__links{
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 2.4rem;
+  margin-block: 1.6rem 4.8rem;
+}
+
+.social__link {
+  color: #555;
+}
+
+.footer__copyright {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.footer__title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-block-end: 3.2rem;
+  color: #333;
+}
+
+.footer__address {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  margin-block-end: 2.4rem;
+  color: #333;
+}
+
+.footer__contact {
+  display: block;
+  font-size: 1.4rem;
+  margin-block-end: .5rem;
+  color: #555;
+}
+
+.footer__link {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #555;
+  margin-block: 1.2rem;
+}
