@@ -520,7 +520,7 @@
 
       <section class="section-features">
         <div class="container">
-        <div class="features">
+          <div class="features">
             <div class="feature">
               <ion-icon class="feature__icon" name="infinite"></ion-icon>
               <p class="feature__title">Never cook again!</p>
@@ -531,7 +531,10 @@
             </div>
 
             <div class="feature">
-              <ion-icon class="feature__icon" name="nutrition-outline"></ion-icon>
+              <ion-icon
+                class="feature__icon"
+                name="nutrition-outline"
+              ></ion-icon>
               <p class="feature__title">Local and organic</p>
               <p class="feature__text">
                 Our cooks only use local, fresh, and organic products to prepare
@@ -558,57 +561,61 @@
             </div>
           </div>
           <!-- END OF FEATURES -->
-        </div> <!-- END OF CONTAINER -->
+        </div>
+        <!-- END OF CONTAINER -->
       </section>
 
       <section class="section-cta" id="cta">
-        <div class="cta">
-          <div class="cta__text-box">
-            <h2 class="heading-secondary">Get your first meal for free!</h2>
-            <p class="cta__text">
-              Healthy, tasty and hassle-free meals are waiting for you. Start
-              eating well today. You can cancel or pause anytime. And the first
-              meal is on us!
-            </p>
-            <form action="#" class="cta__form">
-              <div>
-                <label for="name">Full name</label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="John Smith"
-                />
-              </div>
-              <div>
-                <label for="email">Email address</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="me@example.com"
-                />
-              </div>
-              <div>
-                <label for="where">Where did you find us?</label>
-                <select name="where" id="where">
-                  <option value="">Please choose one option:</option>
-                  <option value="Friends">Friends and family</option>
-                  <option value="Yoututbe">Youtube</option>
-                  <option value="Podcast">Podcast</option>
-                  <option value="Ad">Facebook Ad</option>
-                  <option value="Others">Others</option>
-                </select>
-              </div>
-              <div>
+        <div class="container">
+          <div class="cta">
+            <div class="cta__text-box">
+              <h2 class="heading-secondary">Get your first meal for free!</h2>
+              <p class="cta__text">
+                Healthy, tasty and hassle-free meals are waiting for you. Start
+                eating well today. You can cancel or pause anytime. And the
+                first meal is on us!
+              </p>
+              <form action="#" class="cta__form">
+                <div>
+                  <label for="name">Full name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="John Smith"
+                  />
+                </div>
+                <div>
+                  <label for="email">Email address</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="me@example.com"
+                  />
+                </div>
+                <div>
+                  <label for="where">Where did you find us?</label>
+                  <select name="where" id="where">
+                    <optgroup>
+                      <option value="">Please choose one option:</option>
+                      <option value="Friends">Friends and family</option>
+                      <option value="Yoututbe">Youtube</option>
+                      <option value="Podcast">Podcast</option>
+                      <option value="Ad">Facebook Ad</option>
+                      <option value="Others">Others</option>
+                    </optgroup>
+                  </select>
+                </div>
                 <button class="btn btn--cta">Sign up now</button>
-              </div>
-            </form>
+              </form>
+            </div>
+            <!-- END OF CTA TEXT BOX -->
+            <div class="cta__img-box"></div>
           </div>
-          <!-- END OF CTA TEXT BOX -->
-          <div class="cta__img-box"></div>
+          <!-- END OF CTA -->
         </div>
-        <!-- END OF CTA -->
+        <!-- END OF CONTAINER -->
       </section>
     </main>
 
