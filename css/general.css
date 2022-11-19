@@ -57,4 +57,165 @@ Medium: 11px
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
+<<<<<<< HEAD
+=======
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.container {
+    width: 115rem;
+    margin: 0 auto;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #333;
+}
+
+.heading-primary {
+    font-size: 5rem;
+    margin-block-end: 3rem;
+}
+
+.heading-secondary {
+    font-size: 4.5rem;
+    margin-block-end: 7.2rem;
+}
+
+.heading-tertiary {
+    font-size: 3.2rem;
+    margin-block-end: 3.2rem;
+}
+
+.subheading {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-block-end: 1.6rem;
+    color: #cf711f;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    list-style-type: none;
+}
+
+.list__item {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    font-size: 1.8rem;
+    color: #555;
+}
+
+.list__icon {
+    height: 3rem;
+    width: 3rem;
+    color: #e67e22;
+}
+
+.link:link,
+.link:visited {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding-block-end: 1px;
+    border-block-end: 1px solid #e67e22;
+    color: #e67e22;
+    transition: all .4s;
+}
+
+.link:hover,
+.link:active {
+    border-block-end: 1px solid transparent;
+    color: #cf711f;
+}
+
+/* BUTTTONS */
+.btn,
+.btn:link,
+.btn:visited {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 11px;
+    border: 2px solid transparent;
+    transition: all .4s;
+}
+
+.btn--primary:link,
+.btn--primary:visited {
+    padding: 1.5rem 3rem;
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.btn--primary:hover,
+.btn--primary:active {
+    background-color: #cf711f;
+}
+
+.btn--secondary:link,
+.btn--secondary:visited {
+    padding: 1.5rem 2.5rem;
+    background-color: #fff;
+    color: #333
+}
+
+.btn--secondary:hover,
+.btn--secondary:active {
+    border: 2px solid #fff;
+    background-color: #fdf2e9;
+}
+
+.btn--cta {
+    align-self: end;
+    font-size: 2rem;
+    padding: 1rem 2.4rem;
+    background-color: #45260A;
+    color: #fff;
+}
+
+.btn--cta:hover,
+.btn--cta:active {
+    background-color: #fff;
+    color: #333;
+}
+
+.center {
+    text-align: center;
+}
+
+section {
+    padding: 9.6rem 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    font-weight: 700;
+}
+>>>>>>> b55f24f7206135d577bf050fa4fe61ef1061a8d8
 
