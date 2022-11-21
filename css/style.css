@@ -1,0 +1,103 @@
+/* ###################
+        HEADER
+    ###################
+*/
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8rem;
+    padding-inline: 3rem;
+    background-color: #fdf2e9;
+}
+
+.header__navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: all .4s;
+}
+
+.is-active-navigation {
+    transform: translateX(0%);
+}
+
+.header__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.header__link:link,
+.header__link:visited {
+    font-size: 3rem;
+    color: #333;
+    transition: all .4s;
+}
+
+.header__link:hover,
+.header__link:active {
+    color: #e67e22;
+}
+
+.header__cta:link,
+.header__cta:visited {
+    padding: 1.5rem 2rem;
+    border-radius: 11px;
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.header__cta:hover,
+.header__cta:active {
+    background-color: #cf7c11;
+}
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 30px;
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    border: none;
+    z-index: 2;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    margin-block: 6px;
+    background-color: #e67e22;
+    transition: all .4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(45deg) translate(8px, 5px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+.hamburger.is-active:after {
+    transform: rotate(-45deg) translate(7px, -5px);
+}
+/* ###################
+        HERO
+    ###################
+*/
+

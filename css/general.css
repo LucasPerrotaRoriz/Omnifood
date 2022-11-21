@@ -55,5 +55,116 @@ Medium: 11px
 
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+50% - 8px
+56.5% - 9px
+62.5% - 10px
 */
 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Rubik';
+    font-size: 50%;
+    font-weight: 500;
+    line-height: 1;
+    color: #333;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+.logo {
+    height: 2rem;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading.tertiary {
+
+}
+
+.heading-primary {
+
+}
+
+.heading-secondary {
+
+}
+
+.heading-tertiary {
+
+}
+
+.subheading {
+
+}
+
+.list__item {
+
+}
+
+.list__icon {
+
+}
+
+.link:link,
+.link:visited {
+
+}
+
+.link:hover,
+.link:active {
+
+}
+
+.center {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* ######### BUTTONS ######### */
+.btn,
+.btn:link,
+.btn:visited {
+
+}
+
+.btn--primary:link,
+.btn--primary:visited {
+
+}
+
+.btn--primary:hover,
+.btn--primary:active {
+
+}
+
+.btn--secondary:link,
+.btn--secondary:visited {
+
+}
+
+.btn--secondary:hover,
+.btn--secondary:active {
+
+}

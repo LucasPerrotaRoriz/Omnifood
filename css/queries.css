@@ -1,1 +1,54 @@
+@media only screen and (min-width: 901px) {
+  html {
+    font-size: 56.5%;
+  }
 
+  .logo {
+    height: 2.5rem;
+  }
+
+  .header {
+    height: 9.6rem;
+  }
+
+  .header__navigation {
+    position: static;
+    min-height: auto;
+    width: auto;
+    background-color: transparent;
+    transform: translateX(0%);
+  }
+
+  .header__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .header__link:link,
+  .header__link:visited {
+    font-size: 2rem;
+    color: #333;
+    transition: all 0.4s;
+  }
+
+  .header__cta:link,
+  .header__cta:visited {
+    padding: 1rem 1.5rem;
+    border-radius: 11px;
+    background-color: #e67e22;
+    color: #fff;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+    html {
+        font-size: 62.5%;
+    }
+}
