@@ -73,7 +73,7 @@ html {
     font-size: 50%;
     font-weight: 400;
     line-height: 1;
-    color: #333;
+    color: #555;
 }
 
 .container {
@@ -88,8 +88,9 @@ html {
 
 .heading-primary,
 .heading-secondary,
-.heading.tertiary {
+.heading-tertiary {
     font-weight: 700;
+    color: #333;
 }
 
 .heading-primary {

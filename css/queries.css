@@ -29,6 +29,18 @@
   .meal__container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* ###################
+        TESTIMONIALS
+    ###################
+  */
+  .testimonials {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery__container {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 @media only screen and (min-width: 940px) {
@@ -124,6 +136,25 @@
   .diets {
     grid-column: 3 / -1;
     justify-self: start;
+  }
+
+  /* ###################
+        TESTIMONIALS
+    ###################
+  */
+  .section-testimonials {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1.6rem 0;
+  }
+
+  .testimonials__container {
+    margin: auto 0;
+    padding: 4.8rem;
+  }
+
+  .gallery__container {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   /* ######### BUTTONS ######### */
