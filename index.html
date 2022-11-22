@@ -110,9 +110,11 @@
           </h2>
           <div class="steps__container">
             <!-- STEP 01 -->
-            <img src="img/app/app-screen-1.png" alt="Omnifood app screen. Choose your favorite meals and ingredients."
-              class="step__img">
-            <div class="step">
+            <div class="step__img-container">
+              <img src="img/app/app-screen-1.png" alt="Omnifood app screen. Choose your favorite meals and ingredients."
+                class="step__img">
+            </div>
+            <div class="step__text-container">
               <p class="step__number">01</p>
               <p class="step__title">Tell us what you like (and what not)</p>
               <p class="step__text">
@@ -125,20 +127,25 @@
             </div> <!-- END OF STEP 01 -->
 
             <!-- STEP 02 -->
-            <img src="img/app/app-screen-2.png" alt="Omnifood app. Once per week approve your meals." class="step__img">
-            <div class="step">
+            <div class="step__img-container">
+              <img src="img/app/app-screen-2.png" alt="Omnifood app. Once per week approve your meals."
+                class="step__img">
+            </div>
+            <div class="step__text-container">
               <p class="step__number">02</p>
               <p class="step__title">Approve your weekly meal plan</p>
-              <p class="step__title">
+              <p class="step__text">
                 Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap
                 entire meals, or even add your own recipes.
               </p>
             </div> <!-- END OF STEP 02-->
 
             <!-- STEP 03 -->
-            <img src="img/app/app-screen-3.png"
-              alt="Omnifood app screen. Choose the best time to have your meal delivered" class="step__img">
-            <div class="step">
+            <div class="step__img-container">
+              <img src="img/app/app-screen-3.png"
+                alt="Omnifood app screen. Choose the best time to have your meal delivered" class="step__img">
+            </div>
+            <div class="step__text-container">
               <p class="step__number">03</p>
               <p class="step__title">Receive meals at convenient time</p>
               <p class="step__text">
@@ -162,7 +169,7 @@
               <img src="img/meals/meal-1.jpg" alt="Japanese Gyozas" class="meal__img">
               <div class="meal__content">
                 <div class="meal__tags">
-                  <span class="tag tag--vegetartian">Vegetarian</span>
+                  <span class="tag tag--vegetarian">Vegetarian</span>
                 </div>
                 <p class="meal__title">Japanese Gyozas</p>
                 <ul class="meal__attributes">
@@ -185,25 +192,27 @@
             <!-- MEAL 02 -->
             <div class="meal">
               <img src="img/meals/meal-2.jpg" alt="Avocado Salad" class="meal__img">
-              <div class="meal__tags">
-                <span class="tag tag--vegan">Vegan</span>
-                <span class="tag tag--paleo">Paleo</span>
+              <div class="meal__content">
+                <div class="meal__tags">
+                  <span class="tag tag--vegan">Vegan</span>
+                  <span class="tag tag--paleo">Paleo</span>
+                </div>
+                <p class="meal__title">Avocado Salad</p>
+                <ul class="meal__attributes">
+                  <li class="meal__attribute">
+                    <ion-icon class="meal__icon" name="flame"></ion-icon>
+                    <span><strong>400</strong> calories</span>
+                  </li>
+                  <li class="meal__attribute">
+                    <ion-icon class="meal__icon" name="restaurant"></ion-icon>
+                    <span>Nutriscore &reg; <strong>92</strong></span>
+                  </li>
+                  <li class="meal__attribute">
+                    <ion-icon class="meal__icon" name="star-outline"></ion-icon>
+                    <span><strong>4.8</strong> rating (537)</span>
+                  </li>
+                </ul>
               </div>
-              <p class="meal__title">Avocado Salad</p>
-              <ul class="meal__attributes">
-                <li class="meal__attribute">
-                  <ion-icon class="meal__icon" name="flame"></ion-icon>
-                  <span><strong>400</strong> calories</span>
-                </li>
-                <li class="meal__attribute">
-                  <ion-icon class="meal__icon" name="restaurant"></ion-icon>
-                  <span>Nutriscore &reg; <strong>92</strong></span>
-                </li>
-                <li class="meal__attribute">
-                  <ion-icon class="meal__icon" name="star-outline"></ion-icon>
-                  <span><strong>4.8</strong> rating (537)</span>
-                </li>
-              </ul>
             </div> <!-- END OF MEALS -->
 
             <div class="diets">
@@ -248,7 +257,7 @@
               </ul>
             </div> <!-- END OF DIETS -->
           </div> <!-- END OF MEAL CONTAINER -->
-          <div class="recipes">
+          <div class="recipes center">
             <a href="#" class="link">See all recipes &rarr;</a>
           </div>
         </div> <!-- END OF CONTAINER -->

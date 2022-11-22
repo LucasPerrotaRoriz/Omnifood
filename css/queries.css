@@ -1,3 +1,36 @@
+@media only screen and (min-width: 545px) {
+  .heading-secondary {
+    font-size: 4.5rem;
+    margin-block-end: 6.4rem;
+  }
+
+  /* ###################
+        HOW IT WORKS
+    ###################
+  */
+  .steps__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .step__img-container:nth-child(1) {
+    grid-column: 2/ 3;
+    grid-row: 1/ 2;
+  }
+
+  .step__img-container:nth-child(5) {
+    grid-column: 2/ 3;
+    grid-row: 3/ 4;
+  }
+
+  /* ###################
+        MEAL
+    ###################
+  */
+  .meal__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media only screen and (min-width: 940px) {
   html {
     font-size: 56.5%;
@@ -6,7 +39,7 @@
   /* ###################
         HEADER
     ###################
-*/
+  */
   .header {
     height: 9.6rem;
   }
@@ -62,15 +95,36 @@
   /* ###################
         FEATURED
     ###################
-*/
+  */
   .featured__logos {
     gap: 5rem;
+    margin-block-start: 3.2rem;
   }
 
   .featured__logo {
     height: 3.2rem;
   }
 
+  /* ###################
+        HOW IT WORKS
+    ###################
+  */
+  .steps__container {
+    margin-block-start: 9.6rem;
+  }
+
+  /* ###################
+        MEALS
+    ###################
+  */
+  .meal__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .diets {
+    grid-column: 3 / -1;
+    justify-self: start;
+  }
 
   /* ######### BUTTONS ######### */
   .btn,
@@ -87,6 +141,10 @@
 
   .heading-primary {
     font-size: 5rem;
+  }
+
+  .heading-secondary {
+    font-size: 4.5rem;
   }
 
   .header {
