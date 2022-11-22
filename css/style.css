@@ -40,6 +40,7 @@
 .header__link:link,
 .header__link:visited {
     font-size: 3rem;
+    font-weight: 500;
     color: #333;
     transition: all .4s;
 }
@@ -79,7 +80,7 @@
 .hamburger:before {
     content: '';
     display: block;
-    height: 3px;
+    height: 2px;
     width: 100%;
     margin-block: 6px;
     background-color: #e67e22;
@@ -96,8 +97,107 @@
 .hamburger.is-active:after {
     transform: rotate(-45deg) translate(7px, -5px);
 }
+
 /* ###################
         HERO
     ###################
 */
+.section-hero {
+    padding: 3.2rem 0 9.6rem;
+    background-color: #fdf2e9;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 9.6rem;
+    row-gap: 6.4rem;
+    max-width: 120rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-inline: 3rem;
+}
+
+.hero__text {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-block: 3rem;
+    color: #555;
+}
+
+.hero__delivered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    margin-block-start: 5rem;
+}
+
+.hero__delivered-imgs {
+    display: flex;
+}
+
+.hero__delivered-imgs img {
+    width: 5rem;
+    margin-inline-end: -1.6rem;
+    border-radius: 50%;
+    border: 3px solid #fdf2e9;
+}
+
+.hero__delivered-imgs img:last-child{
+    margin-inline-end: 0;
+}
+
+.hero__delivered-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.hero__delivered-text strong {
+    color: #e67e22;
+}
+
+.hero__img {
+    width: 70%;
+}
+
+/* ###################
+        FEATURED
+    ###################
+*/
+.section-featured {
+    padding: 4.8rem 0 9.6rem;
+}
+
+.heading-featured {
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: #888;
+}
+
+.featured__logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-block-start: 2.4rem;
+}
+
+.featured__logo {
+    height: 2.4rem;
+    filter: brightness(0);
+    opacity: .6;
+}
+
+/* ###################
+        HOW IT WORKS
+    ###################
+*/
+
+
+
+
+
 
