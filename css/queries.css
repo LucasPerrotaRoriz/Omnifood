@@ -41,6 +41,37 @@
   .gallery__container {
     grid-template-columns: repeat(6, 1fr);
   }
+
+  /* ###################
+        PRICING
+    ###################
+  */
+  .plan {
+    padding: 4.8rem;
+  }
+
+  .plan--starter {
+    justify-self: end;
+  }
+
+  .plan--complete {
+    justify-self: start;
+  }
+}
+
+@media only screen and (min-width: 706px) {
+  /* ###################
+        PRICING
+    ###################
+  */
+  .section-pricing {
+    padding-inline: 5.6rem;
+  }
+
+  .plan {
+    max-width: 75%;
+  }
+
 }
 
 @media only screen and (min-width: 940px) {
@@ -188,5 +219,17 @@
 
   .hero {
     max-width: 130rem;
+  }
+
+  /* ###################
+        PRICING
+    ###################
+  */
+  .plan {
+    max-width: 100%;
+  }
+
+  .section-pricing {
+    padding-inline: 9.6rem;
   }
 }
