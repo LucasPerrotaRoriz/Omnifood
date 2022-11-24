@@ -2,16 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs."
-    />
-    <!-- Always include this line of code!!! -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-compatible" content="ie=edge" />
 
     <link rel="icon" href="img/favicon.png" />
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -19,9 +19,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
+    <script defer src="js/script.js"></script>
 
     <script
       type="module"
@@ -31,8 +29,6 @@
       nomodule=""
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
-
-    <title>Omnifood &mdash; Never cook again!</title>
   </head>
 
   <body>
@@ -40,7 +36,6 @@
       <a href="#">
         <img src="img/omnifood-logo.png" alt="Omnifood logo" class="logo" />
       </a>
-
       <nav class="header__navigation">
         <ul class="header__list">
           <li class="header__item">
@@ -60,103 +55,122 @@
           </li>
         </ul>
       </nav>
+
+      <div class="hamburger">
+        <div class="bar"></div>
+      </div>
     </header>
 
     <main>
-      <section class="section-hero">
+      <section class="section-hero" aria-labelledby="hero-title">
         <div class="hero">
-          <div class="hero__text-box">
-            <h1 class="heading-primary">
+          <div class="hero__text-container">
+            <h1 class="heading-primary" id="hero-title">
               A healthy meal delivered to your door, every single day
             </h1>
-            <p class="hero__description">
+            <p class="hero__text">
               The smart 365-days-per-year food subscription that will make you
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <div class="hero__btn">
-              <a href="#" class="btn btn--primary">Start eating well</a>
-              <a href="#" class="btn btn--secondary">Learn more &darr;</a>
-            </div>
-            <div class="hero__delivered-meals">
+            <a href="#" class="btn btn--primary">Start eating well</a>
+            <a href="#" class="btn btn--secondary">Learn more &darr;</a>
+            <div class="hero__delivered">
               <div class="hero__delivered-imgs">
-                <img src="img/customers/customer-1.jpg" alt="Customer 1" />
-                <img src="img/customers/customer-2.jpg" alt="Customer 2" />
-                <img src="img/customers/customer-3.jpg" alt="Customer 3" />
-                <img src="img/customers/customer-4.jpg" alt="Customer 4" />
-                <img src="img/customers/customer-5.jpg" alt="Customer 5" />
-                <img src="img/customers/customer-6.jpg" alt="Customer 6" />
+                <img
+                  src="img/customers/customer-1.jpg"
+                  alt="Omnifood customer"
+                />
+                <img
+                  src="img/customers/customer-2.jpg"
+                  alt="Omnifood customer"
+                />
+                <img
+                  src="img/customers/customer-3.jpg"
+                  alt="Omnifood customer"
+                />
+                <img
+                  src="img/customers/customer-4.jpg"
+                  alt="Omnifood customer"
+                />
+                <img
+                  src="img/customers/customer-5.jpg"
+                  alt="Omnifood customer"
+                />
+                <img
+                  src="img/customers/customer-6.jpg"
+                  alt="Omnifood customer"
+                />
               </div>
               <p class="hero__delivered-text">
-                <strong>250,000+</strong> meals delivered last year!
+                <strong>250,00+</strong> meals delivered last year!
               </p>
             </div>
           </div>
-
-          <div class="hero__img-box">
+          <!-- END OF HERO TEXT CONTAINER -->
+          <div class="hero__img-container">
             <picture>
-              <source srcset="img/hero.webp" type="image/webp" />
-              <source srcset="img/hero-min.png" type="image/png" />
+              <source srcset="img/hero.webp" type="webp" />
+              <source srcset="img/hero-min.png" type="png" />
               <img
-                src="img/hero.png"
-                alt="Woman eating a delicious meal, a container with food, 
-            a delicious meal"
                 class="hero__img"
+                src="img/hero.png"
+                alt="Woman eating a delicious meal, a food container, a
+              delicious healthy dish"
               />
             </picture>
           </div>
+          <!-- END OF HERO IMG CONTAINER -->
         </div>
         <!-- END OF HERO -->
       </section>
 
-      <section class="section-featured">
+      <section class="section-featured" aria-labelledby="featured-title">
         <div class="container">
-          <h2 class="featured__heading">As featured in</h2>
+          <h2 class="heading-featured" id="featured-title">As featured in</h2>
           <div class="featured__logos">
             <img
-              class="featured__logo"
               src="img/logos/techcrunch.png"
               alt="TechCrunch logo"
+              class="featured__logo"
             />
             <img
-              class="featured__logo"
               src="img/logos/business-insider.png"
               alt="Business Insider logo"
+              class="featured__logo"
             />
             <img
-              class="featured__logo"
               src="img/logos/the-new-york-times.png"
               alt="The New York Times logo"
+              class="featured__logo"
             />
             <img
-              class="featured__logo"
               src="img/logos/forbes.png"
               alt="Forbes logo"
+              class="featured__logo"
             />
             <img
-              class="featured__logo"
               src="img/logos/usa-today.png"
               alt="USA Today logo"
+              class="featured__logo"
             />
           </div>
+          <!-- END OF LOGOS -->
         </div>
         <!-- END OF CONTAINER -->
       </section>
 
-      <section class="section-how" id="how">
+      <section class="section-how" id="how" aria-labelledby="how-title">
         <div class="container">
           <span class="subheading">How it works</span>
-          <h2 class="heading-secondary">
+          <h2 class="heading-secondary" id="how-title">
             Your daily dose of health in 3 simple steps
           </h2>
-
           <div class="steps__container">
             <!-- STEP 01 -->
-            <div class="step">
+            <div class="step__text-container">
               <p class="step__number">01</p>
-              <h3 class="heading-tertiary">
-                Tell us what you like (and what not)
-              </h3>
+              <p class="step__title">Tell us what you like (and what not)</p>
               <p class="step__text">
                 Never again waste time thinking about what to eat! Omnifood AI
                 will create a 100% personalized weekly meal plan just for you.
@@ -164,64 +178,68 @@
                 no matter what diet you follow!
               </p>
             </div>
-            <div class="step__img">
+            <!-- END OF STEP 01 -->
+            <div class="step__img-container">
               <img
                 src="img/app/app-screen-1.png"
-                alt="Omnifood app screen. Choose your favorite meals"
+                alt="Omnifood app screen. Choose your favorite meals and ingredients."
                 class="step__img"
               />
             </div>
 
             <!-- STEP 02 -->
-            <div class="step__img">
+            <div class="step__img-container">
               <img
                 src="img/app/app-screen-2.png"
-                alt="Omnifood app screen. Approve your weekly meal "
+                alt="Omnifood app. Once per week approve your meals."
                 class="step__img"
               />
             </div>
-            <div class="step">
+            <div class="step__text-container">
               <p class="step__number">02</p>
-              <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
+              <p class="step__title">Approve your weekly meal plan</p>
               <p class="step__text">
                 Once per week, approve the meal plan generated for you by
                 Omnifood AI. You can change ingredients, swap entire meals, or
                 even add your own recipes.
               </p>
             </div>
+            <!-- END OF STEP 02-->
 
             <!-- STEP 03 -->
-            <div class="step">
+            <div class="step__text-container">
               <p class="step__number">03</p>
-              <h3 class="heading-tertiary">Receive meals at convenient time</h3>
+              <p class="step__title">Receive meals at convenient time</p>
               <p class="step__text">
                 Best chefs in town will cook your selected meal every day, and
                 we will deliver it to your door whenever works best for you. You
                 can change delivery schedule and address daily!
               </p>
             </div>
-            <div class="step__img">
+            <!-- END OF STEP 03 -->
+            <div class="step__img-container">
               <img
                 src="img/app/app-screen-3.png"
-                alt="Omnifood app screen. Choose the time to receive your meal"
+                alt="Omnifood app screen. Choose the best time to have your meal delivered"
                 class="step__img"
               />
             </div>
           </div>
-          <!-- END OF STEP CONTAINER -->
+          <!-- END OF STEPS CONTAINER -->
         </div>
         <!-- END OF CONTAINER -->
       </section>
 
-      <section class="section-meals" id="meals">
+      <section class="section-meals" id="meals" aria-labelledby="meal-title">
         <div class="container center">
           <span class="subheading">Meals</span>
-          <h2 class="heading-secondary">
+          <h2 class="heading-secondary" id="meal-title">
             Omnifood AI chooses from 5,000+ recipes
           </h2>
         </div>
+        <!-- END OF CONTAINER -->
         <div class="container">
-          <div class="meals">
+          <div class="meal__container">
             <!-- MEAL 01 -->
             <div class="meal">
               <img
@@ -230,7 +248,7 @@
                 class="meal__img"
               />
               <div class="meal__content">
-                <div class="tags">
+                <div class="meal__tags">
                   <span class="tag tag--vegetarian">Vegetarian</span>
                 </div>
                 <p class="meal__title">Japanese Gyozas</p>
@@ -241,7 +259,7 @@
                   </li>
                   <li class="meal__attribute">
                     <ion-icon class="meal__icon" name="restaurant"></ion-icon>
-                    <span>NutriScore &copy; <strong>74</strong></span>
+                    <span>Nutriscore &reg; <strong>74</strong></span>
                   </li>
                   <li class="meal__attribute">
                     <ion-icon class="meal__icon" name="star-outline"></ion-icon>
@@ -249,6 +267,7 @@
                   </li>
                 </ul>
               </div>
+              <!-- END OF MEAL CONTENT -->
             </div>
             <!-- END OF MEAL -->
 
@@ -260,7 +279,7 @@
                 class="meal__img"
               />
               <div class="meal__content">
-                <div class="tags">
+                <div class="meal__tags">
                   <span class="tag tag--vegan">Vegan</span>
                   <span class="tag tag--paleo">Paleo</span>
                 </div>
@@ -272,7 +291,7 @@
                   </li>
                   <li class="meal__attribute">
                     <ion-icon class="meal__icon" name="restaurant"></ion-icon>
-                    <span>NutriScore &copy; <strong>92</strong></span>
+                    <span>Nutriscore &reg; <strong>92</strong></span>
                   </li>
                   <li class="meal__attribute">
                     <ion-icon class="meal__icon" name="star-outline"></ion-icon>
@@ -281,49 +300,52 @@
                 </ul>
               </div>
             </div>
-            <!--   END OF MEAL -->
+            <!-- END OF MEALS -->
 
             <div class="diets">
               <h3 class="heading-tertiary">Works with any diet:</h3>
               <ul class="list">
                 <li class="list__item">
-                  <ion-icon class="list__icon" name="checkmark"></ion-icon
-                  >Vegetarian
+                  <ion-icon class="list__icon" name="checkmark"></ion-icon>
+                  <span>Vegetarian</span>
                 </li>
                 <li class="list__item">
-                  <ion-icon class="list__icon" name="checkmark"></ion-icon>Vegan
+                  <ion-icon class="list__icon" name="checkmark"></ion-icon>
+                  <span>Vegan</span>
                 </li>
                 <li class="list__item">
-                  <ion-icon class="list__icon" name="checkmark"></ion-icon
-                  >Pescatarian
+                  <ion-icon class="list__icon" name="checkmark"></ion-icon>
+                  <span>Pescatarian</span>
                 </li>
                 <li class="list__item">
-                  <ion-icon class="list__icon" name="checkmark"></ion-icon
-                  >Gluten-free
+                  <ion-icon class="list__icon" name="checkmark"></ion-icon>
+                  <span>Gluten-free</span>
                 </li>
                 <li class="list__item">
-                  <ion-icon class="list__icon" name="checkmark"></ion-icon
-                  >Lactose-free
+                  <ion-icon class="list__icon" name="checkmark"></ion-icon>
+                  <span>Lactose-free</span>
                 </li>
                 <li class="list__item">
-                  <ion-icon class="list__icon" name="checkmark"></ion-icon>Keto
+                  <ion-icon class="list__icon" name="checkmark"></ion-icon>
+                  <span>Keto</span>
                 </li>
                 <li class="list__item">
-                  <ion-icon class="list__icon" name="checkmark"></ion-icon>Paleo
+                  <ion-icon class="list__icon" name="checkmark"></ion-icon>
+                  <span>Paleo</span>
                 </li>
                 <li class="list__item">
-                  <ion-icon class="list__icon" name="checkmark"></ion-icon>Low
-                  FODMAP
+                  <ion-icon class="list__icon" name="checkmark"></ion-icon>
+                  <span>Low FODMAP</span>
                 </li>
                 <li class="list__item">
-                  <ion-icon class="list__icon" name="checkmark"></ion-icon
-                  >Kid-friendly
+                  <ion-icon class="list__icon" name="checkmark"></ion-icon>
+                  <span>Kid-friendly</span>
                 </li>
               </ul>
             </div>
-            <!-- NED OF DIETS -->
+            <!-- END OF DIETS -->
           </div>
-          <!-- END OF MEALS -->
+          <!-- END OF MEAL CONTAINER -->
           <div class="recipes center">
             <a href="#" class="link">See all recipes &rarr;</a>
           </div>
@@ -331,129 +353,179 @@
         <!-- END OF CONTAINER -->
       </section>
 
-      <section class="section-testimonials" id="testimonials">
+      <section
+        class="section-testimonials"
+        id="testimonials"
+        aria-labelledby="testimonials-title"
+      >
         <div class="testimonials__container">
-          <div class="testimonials__content">
-            <span class="subheading">Testimonials</span>
-            <h2 class="heading-secondary">
-              Once you try it, you can't go back
-            </h2>
-            <div class="testimonials">
-              <figure class="testimonial">
-                <img
-                  src="img/customers/dave.jpg"
-                  alt="Dave Bryson"
-                  class="testimonial__img"
-                />
-                <blockquote class="testimonial__text">
-                  Inexpensive, healthy and great-tasting meals, without even
-                  having to order manually! It feels truly magical.
-                </blockquote>
-                <p class="testimonial__name">&mdash; Dave Bryson</p>
-              </figure>
+          <span class="subheading">Testimonials</span>
+          <h2 class="heading-secondary" id="testimonials__title">
+            Once you try it, you can't go back
+          </h2>
+          <div class="testimonials">
+            <!-- TESTIMONIAL 01-->
+            <figure class="testimonial">
+              <img
+                src="img/customers/dave.jpg"
+                alt="Dave Bryson"
+                class="testimonial__img"
+              />
+              <blockquote class="testimonial__text">
+                Inexpensive, healthy and great-tasting meals, without even
+                having to order manually! It feels truly magical.
+              </blockquote>
+              <p class="testimonial__name">&mdash; Dave Bryson</p>
+            </figure>
 
-              <figure class="testimonial">
-                <img
-                  src="img/customers/ben.jpg"
-                  alt="Ben Hadley"
-                  class="testimonial__img"
-                />
-                <blockquote class="testimonial__text">
-                  The AI algorithm is crazy good, it chooses the right meals for
-                  me every time. It's amazing not to worry about food anymore!
-                </blockquote>
-                <p class="testimonial__name">&mdash; Ben Hadley</p>
-              </figure>
+            <!-- TESTIMONIAL 02-->
+            <figure class="testimonial">
+              <img
+                src="img/customers/ben.jpg"
+                alt="Ben Hadley"
+                class="testimonial__img"
+              />
+              <blockquote class="testimonial__text">
+                The AI algorithm is crazy good, it chooses the right meals for
+                me every time. It's amazing not to worry about food anymore!
+              </blockquote>
+              <p class="testimonial__name">&mdash; Ben Hadley</p>
+            </figure>
 
-              <figure class="testimonial">
-                <img
-                  src="img/customers/steve.jpg"
-                  alt="Steve Miller"
-                  class="testimonial__img"
-                />
-                <blockquote class="testimonial__text">
-                  Omnifood is a life saver! I just started a company, so there's
-                  no time for cooking. I couldn't live without my daily meals
-                  now!
-                </blockquote>
-                <p class="testimonial__name">&mdash; Steve Miller</p>
-              </figure>
+            <!-- TESTIMONIAL 03-->
+            <figure class="testimonial">
+              <img
+                src="img/customers/steve.jpg"
+                alt="Steven Miller"
+                class="testimonial__img"
+              />
+              <blockquote class="testimonial__text">
+                Omnifood is a life saver! I just started a company, so there's
+                no time for cooking. I couldn't live without my daily meals now!
+              </blockquote>
+              <p class="testimonial__name">&mdash; Steven Miller</p>
+            </figure>
 
-              <figure class="testimonial">
-                <img
-                  src="img/customers/hannah.jpg"
-                  alt="Hannah Smith"
-                  class="testimonial__img"
-                />
-                <blockquote class="testimonial__text">
-                  I got Omnifood for the whole family, and it frees up so much
-                  time! Plus, everything is organic and vegan and without
-                  plastic.
-                </blockquote>
-                <p class="testimonial__name">&mdash; Hannah Smith</p>
-              </figure>
-            </div>
-            <!-- END OF TESTIMONIALS -->
-          </div>
-          <!-- END OF TESTIMONIALS CONTENT -->
-
-          <div class="gallery">
-            <figure class="gallery__item">
-              <img src="img/gallery/gallery-1.jpg" alt="Gallery item 1" />
-            </figure>
-            <figure class="gallery__item">
-              <img src="img/gallery/gallery-2.jpg" alt="Gallery item 2" />
-            </figure>
-            <figure class="gallery__item">
-              <img src="img/gallery/gallery-3.jpg" alt="Gallery item 3" />
-            </figure>
-            <figure class="gallery__item">
-              <img src="img/gallery/gallery-4.jpg" alt="Gallery item 4" />
-            </figure>
-            <figure class="gallery__item">
-              <img src="img/gallery/gallery-5.jpg" alt="Gallery item 5" />
-            </figure>
-            <figure class="gallery__item">
-              <img src="img/gallery/gallery-6.jpg" alt="Gallery item 6" />
-            </figure>
-            <figure class="gallery__item">
-              <img src="img/gallery/gallery-7.jpg" alt="Gallery item 7" />
-            </figure>
-            <figure class="gallery__item">
-              <img src="img/gallery/gallery-8.jpg" alt="Gallery item 8" />
-            </figure>
-            <figure class="gallery__item">
-              <img src="img/gallery/gallery-9.jpg" alt="Gallery item 9" />
-            </figure>
-            <figure class="gallery__item">
-              <img src="img/gallery/gallery-10.jpg" alt="Gallery item 10" />
-            </figure>
-            <figure class="gallery__item">
-              <img src="img/gallery/gallery-11.jpg" alt="Gallery item 11" />
-            </figure>
-            <figure class="gallery__item">
-              <img src="img/gallery/gallery-12.jpg" alt="Gallery item 12" />
+            <!-- TESTIMONIAL 04-->
+            <figure class="testimmonial">
+              <img
+                src="img/customers/hannah.jpg"
+                alt="Hannah Smith"
+                class="testimonial__img"
+              />
+              <blockquote class="testimonial__text">
+                I got Omnifood for the whole family, and it frees up so much
+                time! Plus, everything is organic and vegan and without plastic.
+              </blockquote>
+              <p class="testimonial__name">&mdash; Hannah Smith</p>
             </figure>
           </div>
-          <!-- END OF GALLERY -->
+          <!-- END OF TESTIMONIALS  -->
         </div>
         <!-- TESTIMONIALS CONTAINER -->
+
+        <div class="gallery__container">
+          <figure class="gallery__item">
+            <img
+              src="img/gallery/gallery-1.jpg"
+              alt="Gallery item"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/gallery/gallery-2.jpg"
+              alt="Gallery item"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/gallery/gallery-3.jpg"
+              alt="Gallery item"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/gallery/gallery-4.jpg"
+              alt="Gallery item"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/gallery/gallery-5.jpg"
+              alt="Gallery item"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/gallery/gallery-6.jpg"
+              alt="Gallery item"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/gallery/gallery-7.jpg"
+              alt="Gallery item"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/gallery/gallery-8.jpg"
+              alt="Gallery item"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/gallery/gallery-9.jpg"
+              alt="Gallery item"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/gallery/gallery-10.jpg"
+              alt="Gallery item"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/gallery/gallery-11.jpg"
+              alt="Gallery item"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/gallery/gallery-12.jpg"
+              alt="Gallery item"
+              class="gallery__img"
+            />
+          </figure>
+        </div>
+        <!-- END OF GALLERY -->
       </section>
 
-      <section class="section-pricing" id="pricing">
+      <section class="section-pricing" id="pricing" aria-labelledby="pricing-title">
+        <span class="subheading">Pricing</span>
+        <h2 class="heading-secondary" id="pricing-title">
+          Eating well without breaking the bank
+        </h2>
         <div class="container">
-          <span class="subheading">Pricing</span>
-          <h2 class="heading-secondary">
-            Eating well without breaking the bank
-          </h2>
-
-          <div class="plans">
-            <!-- STARTER PLAN -->
+          <div class="plan__container">
+            <!-- PLAN STARTER -->
             <div class="plan plan--starter">
               <header class="plan__header">
                 <p class="plan__name">Starter</p>
                 <p class="plan__price"><span>$</span>399</p>
-                <p class="plan__info">per month. That's just $13 per meal!</p>
+                <p class="plan__text">per month. That's just $13 per meal!</p>
               </header>
               <ul class="list">
                 <li class="list__item">
@@ -470,25 +542,25 @@
                 </li>
                 <li class="list__item">
                   <ion-icon class="list__icon" name="close"></ion-icon>
+                  <span></span>
                 </li>
               </ul>
-              <div class="plan__btn">
+              <div class="plan__signup">
                 <a href="#" class="btn btn--primary">Start eating well</a>
               </div>
             </div>
-            <!-- END OF STARTER PLAN -->
 
-            <!-- COMPLETE PLAN -->
+            <!-- PLAN COMPLETE -->
             <div class="plan plan--complete">
               <header class="plan__header">
                 <p class="plan__name">Complete</p>
                 <p class="plan__price"><span>$</span>649</p>
-                <p class="plan__info">per month. That's just $11 per meal!</p>
+                <p class="plan__text">per month. That's just $11 per meal!</p>
               </header>
               <ul class="list">
                 <li class="list__item">
                   <ion-icon class="list__icon" name="checkmark"></ion-icon>
-                  <span><strong>2</strong> meals per day</span>
+                  <span><strong>2 meals</strong> per day</span>
                 </li>
                 <li class="list__item">
                   <ion-icon class="list__icon" name="checkmark"></ion-icon>
@@ -503,13 +575,12 @@
                   <span>Get access to latest recipes</span>
                 </li>
               </ul>
-              <div class="plan__btn">
+              <div class="plan__signup">
                 <a href="#" class="btn btn--primary">Start eating well</a>
               </div>
             </div>
-            <!-- END OF COMPLETE PLAN -->
           </div>
-          <!-- END OF PLANS -->
+
           <aside class="plan__details">
             Prices include all applicable taxes. You can cancel at any time.
             Both plans include the following:
@@ -521,6 +592,7 @@
       <section class="section-features">
         <div class="container">
           <div class="features">
+            <!-- FEATURE 01 -->
             <div class="feature">
               <ion-icon class="feature__icon" name="infinite"></ion-icon>
               <p class="feature__title">Never cook again!</p>
@@ -530,11 +602,9 @@
               </p>
             </div>
 
+            <!-- FEATURE 02 -->
             <div class="feature">
-              <ion-icon
-                class="feature__icon"
-                name="nutrition-outline"
-              ></ion-icon>
+              <ion-icon class="feature__icon" name="nutrition"></ion-icon>
               <p class="feature__title">Local and organic</p>
               <p class="feature__text">
                 Our cooks only use local, fresh, and organic products to prepare
@@ -542,8 +612,9 @@
               </p>
             </div>
 
+            <!-- FEATURE 03 -->
             <div class="feature">
-              <ion-icon class="feature__icon" name="leaf-outline"></ion-icon>
+              <ion-icon class="feature__icon" name="leaf"></ion-icon>
               <p class="feature__title">No waste</p>
               <p class="feature__text">
                 All our partners only use reusable containers to package all
@@ -551,8 +622,9 @@
               </p>
             </div>
 
+            <!-- FEATURE 04 -->
             <div class="feature">
-              <ion-icon class="feature__icon" name="pause-outline"></ion-icon>
+              <ion-icon class="feature__icon" name="pause"></ion-icon>
               <p class="feature__title">Pause anytime</p>
               <p class="feature__text">
                 Going on vacation? Just pause your subscription, and we refund
@@ -565,16 +637,17 @@
         <!-- END OF CONTAINER -->
       </section>
 
-      <section class="section-cta" id="cta">
+      <section class="section-cta" id="cta" aria-labelledby="form-title">
         <div class="container">
           <div class="cta">
-            <div class="cta__text-box">
-              <h2 class="heading-secondary">Get your first meal for free!</h2>
+            <div class="cta__text-container">
+              <h2 class="heading-secondary" id="form-title">Get your first meal for free!</h2>
               <p class="cta__text">
                 Healthy, tasty and hassle-free meals are waiting for you. Start
                 eating well today. You can cancel or pause anytime. And the
                 first meal is on us!
               </p>
+
               <form action="#" class="cta__form">
                 <div>
                   <label for="name">Full name</label>
@@ -586,7 +659,7 @@
                   />
                 </div>
                 <div>
-                  <label for="email">Email address</label>
+                  <label for="email">Emaill address</label>
                   <input
                     type="email"
                     name="email"
@@ -595,123 +668,118 @@
                   />
                 </div>
                 <div>
-                  <label for="where">Where did you find us?</label>
+                  <label for="where">Where did you hear from us?</label>
                   <select name="where" id="where">
-                    <optgroup>
-                      <option value="">Please choose one option:</option>
-                      <option value="Friends">Friends and family</option>
-                      <option value="Yoututbe">Youtube</option>
-                      <option value="Podcast">Podcast</option>
-                      <option value="Ad">Facebook Ad</option>
-                      <option value="Others">Others</option>
-                    </optgroup>
+                    <option value="" selected>Please choose one option:</option>
+                    <option value="Friends">Family and fPriends</option>
+                    <option value="Youtube">Youtube</option>
+                    <option value="Podcast">Podcast</option>
+                    <option value="ad">Facebook ad</option>
+                    <option value="Other">Other</option>
                   </select>
                 </div>
-                <button class="btn btn--cta">Sign up now</button>
+                <button class="btn btn--form">Sign up now</button>
               </form>
             </div>
-            <!-- END OF CTA TEXT BOX -->
-            <div class="cta__img-box"></div>
+            <!-- END OF CTA TEXT CONTAINER -->
+
+            <div class="cta__img-container"></div>
           </div>
           <!-- END OF CTA -->
         </div>
         <!-- END OF CONTAINER -->
       </section>
     </main>
+    <footer class="footer">
+      <div class="container grid--footer">
+      <div class="footer__socials">
+        <img src="img/omnifood-logo.png" alt="Omnifood logo" class="logo" />
+        <ul class="socials">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <ion-icon class="social__icon" name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <ion-icon class="social__icon" name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <ion-icon class="social__icon" name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <p class="copyright">Copyright &copy; 2022 by Omnifood, Inc. All rights reserved. </p>
+      </div>
 
-    <footer class="footer container">
-        <div class="footer__socials">
-          <a href="#"
-            ><img class="logo" src="img/omnifood-logo.png" alt="Omnifood logo"
-          /></a>
-
-          <ul class="social__links">
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <ion-icon class="social__icon" name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <ion-icon class="social__icon" name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <ion-icon class="social__icon" name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-          </ul>
-
-          <p class="footer__copyright">
-            Copyright &copy; 2022 by Omnifood, Inc. All rights reserved.
+      <div class="footer__contacts">
+        <p class="footer__title">Contact us</p>
+        <address>
+          <p class="footer__address">
+            623 Harrison St., 2nd Floor, San Francisco, CA 94107
           </p>
-        </div>
+          <p>
+            <a href="tel:415-201-6370" class="footer__contact"
+              >415-201-6370</a
+            >
+            <a href="mailto:hello@omnifood.com" class="footer__contact">hello@omnifood.com</a>
+          </p>
+        </address>
+      </div>
 
-        <div class="footer__contacts">
-          <p class="footer__title">Contact us</p>
-          <address>
-            <p class="footer__address">
-              623 Harrison St., 2nd Floor, San Francisco, CA 94107
-            </p>
-            <p>
-              <a class="footer__contact" href="tel:415-201-6370">415-201-6370</a>
-              <a class="footer__contact"href="mailto:hello@omnifood.com">hello@omnifood.com</a>
-            </p>
-          </address>
-        </div>
+      <nav class="footer__navigation">
+        <p class="footer__title">Account</p>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">Create account</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Sign in</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">iOS App</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Android app</a>
+          </li>
+        </ul>
+      </nav>
 
-        <nav class="footer__navigation">
-          <p class="footer__title">Account</p>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="#" class="footer__link">Create account</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Sign in</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">iOS app</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Android app</a>
-            </li>
-          </ul>
-        </nav>
+      <nav class="footer__navigation">
+        <p class="footer__title">Company</p>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">About Omnifood</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">For Businnes</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Cooking partners</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Carrers</a>
+          </li>
+        </ul>
+      </nav>
 
-        <nav class="footer__navigation">
-          <p class="footer__title">Company</p>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="#" class="footer__link">About Omnifood</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">For Business</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Cooking partners</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Careers</a>
-            </li>
-          </ul>
-        </nav>
-
-        <nav class="footer__navigation">
-          <p class="footer__title">Resources</p>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="#" class="footer__link">Recipe directory</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Help center</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Privacy & terms</a>
-            </li>
-          </ul>
-        </nav>
-      <!-- END OF CONTAINER -->
+      <nav class="footer__navigation">
+        <p class="footer__title">Resources</p>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">Recipe Directory</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Help center</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Privacy & terms</a>
+          </li>
+        </ul>
+      </nav>
+    </div> <!-- END OF CONTAINER -->
     </footer>
   </body>
 </html>

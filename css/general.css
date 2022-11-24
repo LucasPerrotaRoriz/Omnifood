@@ -55,6 +55,10 @@ Medium: 11px
 
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+50% - 8px
+56.5% - 9px
+62.5% - 10px
 */
 
 * {
@@ -64,155 +68,145 @@ Medium: 11px
 }
 
 html {
-    font-size: 62.5%;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    line-height: 1;
+  font-family: "Rubik", sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
+  line-height: 1;
+  color: #555;
 }
 
 .container {
-    width: 115rem;
-    margin: 0 auto;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
 }
 
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
-    font-weight: 700;
-    letter-spacing: -0.5px;
-    color: #333;
+  font-weight: 700;
+  color: #333;
 }
 
 .heading-primary {
-    font-size: 5rem;
-    margin-block-end: 3rem;
+  font-size: 5.6rem;
 }
 
 .heading-secondary {
-    font-size: 4.5rem;
-    margin-block-end: 7.2rem;
+  font-size: 4.8rem;
+  margin-block-end: 9.6rem;
 }
 
 .heading-tertiary {
-    font-size: 3.2rem;
-    margin-block-end: 3.2rem;
+  font-size: 3.2rem;
+  margin-block-end: 2.4rem;
 }
 
 .subheading {
-    display: inline-block;
-    font-size: 1.6rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-block-end: 1.6rem;
-    color: #cf711f;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-block-end: 1rem;
+  color: #e67e22;
 }
 
 .list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-    list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 
 .list__item {
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
-    font-size: 1.8rem;
-    color: #555;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .list__icon {
-    height: 3rem;
-    width: 3rem;
-    color: #e67e22;
+  font-size: 3.2rem;
+  color: #e67e22;
 }
 
 .link:link,
 .link:visited {
-    font-size: 1.6rem;
-    font-weight: 500;
-    text-decoration: none;
-    padding-block-end: 1px;
-    border-block-end: 1px solid #e67e22;
-    color: #e67e22;
-    transition: all .4s;
+  font-size: 1.8rem;
+  padding-block-end: 3px;
+  border-bottom: 1px solid #e67e22;
+  color: #e67e22;
+  transition: all 0.4s;
 }
 
 .link:hover,
-.link:active {
-    border-block-end: 1px solid transparent;
-    color: #cf711f;
+.link.active {
+  border-bottom: 1px solid transparent;
 }
 
-/* BUTTTONS */
+.center {
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* BUTTONS */
 .btn,
 .btn:link,
 .btn:visited {
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 11px;
-    border: 2px solid transparent;
-    transition: all .4s;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.6rem 2.4rem;
+  border-radius: 11px;
+  border: 2px solid transparent;
+  transition: all 0.4s;
 }
 
 .btn--primary:link,
 .btn--primary:visited {
-    padding: 1.5rem 3rem;
-    background-color: #e67e22;
-    color: #fff;
+  background-color: #e67e22;
+  color: #fff;
 }
 
 .btn--primary:hover,
 .btn--primary:active {
-    background-color: #cf711f;
+  background-color: #cf711f;
 }
 
 .btn--secondary:link,
 .btn--secondary:visited {
-    padding: 1.5rem 2.5rem;
-    background-color: #fff;
-    color: #333
+  margin-inline-start: 1.6rem;
+  background-color: #fff;
+  color: #333;
 }
 
 .btn--secondary:hover,
 .btn--secondary:active {
-    border: 2px solid #fff;
-    background-color: #fdf2e9;
+  border: 2px solid #fff;
+  background-color: #fdf2e9;
 }
 
-.btn--cta {
-    align-self: end;
-    font-size: 2rem;
-    padding: 1rem 2.4rem;
-    background-color: #45260A;
-    color: #fff;
+.btn--form {
+  align-self: end;
+  font-family: inherit;
+  padding: 1.4rem;
+  background-color: #45260a;
+  color: #fff;
 }
 
-.btn--cta:hover,
-.btn--cta:active {
-    background-color: #fff;
-    color: #333;
+.btn--form:hover,
+.btn--form:active {
+  background-color: #fff;
+  color: #333;
 }
-
-.center {
-    text-align: center;
-}
-
-section {
-    padding: 9.6rem 0;
-}
-
-li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-strong {
-    font-weight: 700;
-}
-
